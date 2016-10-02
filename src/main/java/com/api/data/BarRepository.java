@@ -1,6 +1,6 @@
-package com.data;
+package com.api.data;
 
-import com.domain.Bar;
+import com.api.domain.Bar;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

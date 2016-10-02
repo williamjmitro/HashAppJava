@@ -1,6 +1,7 @@
-package com.data;
+package com.api.data;
 
-import com.domain.Bar;
+import com.api.data.BarRepository;
+import com.api.domain.Bar;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

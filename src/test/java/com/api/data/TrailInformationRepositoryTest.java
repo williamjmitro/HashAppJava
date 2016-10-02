@@ -1,6 +1,6 @@
-package com.data;
+package com.api.data;
 
-import com.domain.Neighborhood;
+import com.api.domain.TrailInformation;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import static org.assertj.core.api.Java6Assertions.assertThat;
 
+
 /**
  * Created by Porn Again Christian PRATH3 on 10/2/2016.
  */
@@ -17,16 +18,18 @@ import static org.assertj.core.api.Java6Assertions.assertThat;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @Transactional
-public class NeighborhoodRepositoryTest {
+public class TrailInformationRepositoryTest {
 
     @Autowired
-    NeighborhoodRepository neighborhoodRepository;
+    TrailInformationRepository trailInformationRepository;
 
     @Test
     public void repoTest(){
 
-        Neighborhood neighborhood = neighborhoodRepository.getByName("Dormont");
+        TrailInformation trailInformation = trailInformationRepository.getOne(2l);
 
-        assertThat(neighborhood.getNeighborhoodId()).isEqualTo(10);
+        assertThat(trailInformation).isNotNull();
+        assertThat(trailInformation.getBar().getName()).isEqualTo("The O");
+        assertThat(trailInformation.getNeighborhood().getName()).isEqualTo("Oakland");
     }
 }

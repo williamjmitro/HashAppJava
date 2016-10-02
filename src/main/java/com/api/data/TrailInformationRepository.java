@@ -1,6 +1,6 @@
-package com.data;
+package com.api.data;
 
-import com.domain.TrailInformation;
+import com.api.domain.TrailInformation;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

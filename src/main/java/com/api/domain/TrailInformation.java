@@ -1,4 +1,4 @@
-package com.domain;
+package com.api.domain;
 
 import javax.persistence.*;
 import java.util.Date;

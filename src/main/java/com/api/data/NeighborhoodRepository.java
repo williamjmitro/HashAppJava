@@ -1,6 +1,6 @@
-package com.data;
+package com.api.data;
 
-import com.domain.Neighborhood;
+import com.api.domain.Neighborhood;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
