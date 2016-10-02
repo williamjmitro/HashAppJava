@@ -13,5 +13,4 @@ public interface BarRepository extends JpaRepository<Bar, Long> {
 
     public Bar findByName(String name);
 
-
 }
