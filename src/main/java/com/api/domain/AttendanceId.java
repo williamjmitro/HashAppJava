@@ -6,20 +6,20 @@ import java.io.Serializable;
  * Created by Porn Again Christian PRATH3 on 10/2/2016.
  */
 
-public class AttedanceId implements Serializable {
+public class AttendanceId implements Serializable {
 
     private static final long serialVersionUID = 7050712567955042993L;
 
-    public AttedanceId(){
+    public AttendanceId(){
     }
 
-    private Long trailId;
+    private Long trailNumber;
 
     private Long hasherId;
 
     @Override
     public int hashCode(){
-        return  trailId.hashCode() + hasherId.hashCode();
+        return  trailNumber.hashCode() + hasherId.hashCode();
     }
 
     @Override
@@ -27,11 +27,11 @@ public class AttedanceId implements Serializable {
         boolean same = false;
         if (obj == this) {
             same = true;
-        } else if (!(obj instanceof AttedanceId)) {
+        } else if (!(obj instanceof AttendanceId)) {
             same = false;
         } else if (obj != null) {
-            AttedanceId pk = (AttedanceId) obj;
-            return pk.trailId.equals(trailId) && pk.hasherId.equals(hasherId);
+            AttendanceId pk = (AttendanceId) obj;
+            return pk.trailNumber.equals(trailNumber) && pk.hasherId.equals(hasherId);
         }
         return same;
     }
