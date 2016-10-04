@@ -1,5 +1,6 @@
 package com.api.endpoint;
 
+import com.api.base.BaseEndpoint;
 import com.api.domain.Hasher;
 import com.api.service.HasherService;
 import io.swagger.annotations.Api;
@@ -18,7 +19,7 @@ import java.util.List;
 @RestController
 @RequestMapping("hasher")
 @Api("hasher")
-public class HasherEndpoint {
+public class HasherEndpoint extends BaseEndpoint {
 
     @Autowired
     HasherService hasherService;
@@ -26,6 +27,7 @@ public class HasherEndpoint {
     @RequestMapping(value = "/all",method = RequestMethod.GET,produces = "application/json")
     @ApiOperation(value = "Returns all hashers")
     public List<Hasher> getHashers(){
+        log.info("test");
         return hasherService.getAllHashers();
     }
 }
