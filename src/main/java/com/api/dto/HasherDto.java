@@ -10,16 +10,16 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType
 public class HasherDto {
 
-    private Long hashId;
+    private Long hasherId;
 
     private String hashName;
 
-    public Long getHashId() {
-        return hashId;
+    public Long getHasherId() {
+        return hasherId;
     }
 
-    public void setHashId(Long hashId) {
-        this.hashId = hashId;
+    public void setHasherId(Long hasherId) {
+        this.hasherId = hasherId;
     }
 
     public String getHashName() {

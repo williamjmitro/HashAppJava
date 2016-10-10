@@ -25,7 +25,7 @@ public class HasherServiceImpl implements HasherService {
         List<HasherDto> response = new ArrayList<HasherDto>();
         for(Hasher hasher : results){
             HasherDto hasherDto = new HasherDto();
-            hasherDto.setHashId(hasher.getHasherId());
+            hasherDto.setHasherId(hasher.getHasherId());
             hasherDto.setHashName(hasher.getHashName());
             response.add(hasherDto);
         }
