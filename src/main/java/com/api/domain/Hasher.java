@@ -19,7 +19,7 @@ public class Hasher {
     private String hashName;
 
     @Column(name = "nerd_first")
-    private String nerdName;
+    private String nerdFirst;
 
     @Column(name = "nerd_last")
     private String nerdLast;
@@ -46,7 +46,7 @@ public class Hasher {
     private Long trailCount;
 
     @Column(name = "hared_count")
-    private Long hardCount;
+    private Long haredCount;
 
     public Long getHasherId() {
         return hasherId;
@@ -64,12 +64,12 @@ public class Hasher {
         this.hashName = hashName;
     }
 
-    public String getNerdName() {
-        return nerdName;
+    public String getNerdFirst() {
+        return nerdFirst;
     }
 
-    public void setNerdName(String nerdName) {
-        this.nerdName = nerdName;
+    public void setNerdFirst(String nerdFirst) {
+        this.nerdFirst = nerdFirst;
     }
 
     public String getNerdLast() {
@@ -144,11 +144,11 @@ public class Hasher {
         this.trailCount = trailCount;
     }
 
-    public Long getHardCount() {
-        return hardCount;
+    public Long getHaredCount() {
+        return haredCount;
     }
 
-    public void setHardCount(Long hardCount) {
-        this.hardCount = hardCount;
+    public void setHaredCount(Long haredCount) {
+        this.haredCount = haredCount;
     }
 }

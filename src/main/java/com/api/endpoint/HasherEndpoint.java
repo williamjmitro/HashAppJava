@@ -27,7 +27,6 @@ public class HasherEndpoint extends BaseEndpoint {
     @RequestMapping(value = "/all",method = RequestMethod.GET,produces = "application/json")
     @ApiOperation(value = "Returns all hashers")
     public HashersResponse getHashers(){
-        log.info("test");
         return hasherService.getAllHashers();
     }
 }
