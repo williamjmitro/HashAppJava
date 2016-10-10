@@ -1,7 +1,7 @@
 package com.api.endpoint;
 
 import com.api.base.BaseEndpoint;
-import com.api.domain.Hasher;
+import com.api.dto.HasherDto;
 import com.api.service.HasherService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -28,7 +28,7 @@ public class HasherEndpoint extends BaseEndpoint {
     @CrossOrigin
     @RequestMapping(value = "/all",method = RequestMethod.GET,produces = "application/json")
     @ApiOperation(value = "Returns all hashers")
-    public List<Hasher> getHashers(){
+    public List<HasherDto> getHashers(){
         log.info("test");
         return hasherService.getAllHashers();
     }

@@ -1,6 +1,6 @@
 package com.api.service;
 
-import com.api.domain.Hasher;
+import com.api.dto.HasherDto;
 
 import java.util.List;
 
@@ -13,5 +13,5 @@ public interface HasherService {
      * Gets all hashers on record
      * @return - List of hashers
      */
-    public List<Hasher> getAllHashers();
+    public List<HasherDto> getAllHashers();
 }
