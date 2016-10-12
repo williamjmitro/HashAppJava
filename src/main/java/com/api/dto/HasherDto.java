@@ -31,7 +31,7 @@ public class HasherDto {
 
     private Long yearsHashing;
 
-    private KennelDto kennelDto;
+    private String kennelName;
 
     private Long trailCount;
 
@@ -101,12 +101,12 @@ public class HasherDto {
         this.yearsHashing = yearsHashing;
     }
 
-    public KennelDto getKennelDto() {
-        return kennelDto;
+    public String getKennelName() {
+        return kennelName;
     }
 
-    public void setKennelDto(KennelDto kennelDto) {
-        this.kennelDto = kennelDto;
+    public void setKennelName(String kennelName) {
+        this.kennelName = kennelName;
     }
 
     public Long getTrailCount() {
@@ -124,8 +124,6 @@ public class HasherDto {
     public void setHaredCount(Long haredCount) {
         this.haredCount = haredCount;
     }
-
-
 
     public Long getHasherId() {
         return hasherId;

@@ -3,7 +3,6 @@ package com.api.service;
 import com.api.data.HasherRepository;
 import com.api.domain.Hasher;
 import com.api.dto.HasherDto;
-import com.api.dto.KennelDto;
 import com.api.dto.frontend.HashersResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -44,11 +43,7 @@ public class HasherServiceImpl implements HasherService {
         hasherDto.setEmailAddress(hasher.getEmailAddress());
         hasherDto.setHaredCount(hasher.getHaredCount());
         hasherDto.setTrailCount(hasher.getTrailCount());
-
-        KennelDto kennelDto = new KennelDto();
-        kennelDto.setKennelId(hasher.getKennel().getKennelId());
-        kennelDto.setKennelName(hasher.getKennel().getName());
-        hasherDto.setKennelDto(kennelDto);
+        hasherDto.setKennelName(hasher.getKennel().getName());
 
         return hasherDto;
     }
